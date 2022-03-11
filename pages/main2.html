@@ -1,0 +1,18 @@
+<!-- <h1>This is Main</h1>
+<h3>Scope value (on main Page): {{ name }}</h3>
+<hr />
+<input type="text" ng-model="name"> -->
+
+<label>Search</label>
+<input type="text" value="Doe" />
+
+<h3>Search Results</h3>
+
+<!-- this is passing params -->
+<!-- <div class="list-group">
+    <search-result person-name="{{ person.name }}" person-address="{{person.address}}"></search-result>
+</div> -->
+
+<div class="list-group" ng-repeat="person in people">
+    <search-result person-object="person" formatted-address-function="formattedAddress(aperson)"></search-result>
+</div>
